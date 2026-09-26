@@ -1,4 +1,3 @@
-cat > /home/claude/index.html << 'FILEEOF'
 <!DOCTYPE html>
 <html lang="id">
 
@@ -38,6 +37,7 @@ cat > /home/claude/index.html << 'FILEEOF'
       --lilac: #5C7A48;
       --lilac2: #7C9868;
       --lilac-pale: #E3EDD6;
+      --gold: #C9974B;
       --grey: #9C8B78;
       --grey2: #B5A794;
       --grey3: #D6C9B4;
@@ -166,7 +166,8 @@ cat > /home/claude/index.html << 'FILEEOF'
       color: var(--text); text-shadow: 2px 3px 0 rgba(92, 122, 72, .12);
     }
     .hero-name .grad { color: var(--blue2); font-weight: 700; }
-    .hero-name .grad-green { color: var(--lilac2); font-weight: 700; }
+    .hero-name .grad-kusuma { color: var(--gold); font-weight: 700; }
+    .hero-name .grad-ramadani { color: var(--lilac2); font-weight: 700; }
 
     .hero-tagline { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
     .tagline-chip {
@@ -620,14 +621,15 @@ cat > /home/claude/index.html << 'FILEEOF'
     <div class="hero-inner" style="max-width:1200px;margin:0 auto;">
       <div>
         <div class="hero-badge"><span></span> Open for Internship &amp; Collaboration</div>
-        <h1 class="hero-name">Keyza <span class="grad">Nadine</span><br><span class="grad-green">Kusuma Ramadani</span></h1>
+        <h1 class="hero-name">Keyza <span class="grad">Nadine</span><br><span class="grad-kusuma">Kusuma</span> <span class="grad-ramadani">Ramadani</span></h1>
        <div class="hero-tagline">
           <span class="tagline-chip">📱 Mobile Developer</span>
-          <span class="tagline-chip">🎧 Customer Technical Support</span>
+          <span class="tagline-chip">✅ Quality Assurance</span>
           <span class="tagline-chip">💻 Frontend Dev</span>
         </div>
-        <p class="hero-desc">Siswa RPL di SMK Telkom Malang — membangun aplikasi mobile dengan Flutter, komunikatif
-          dalam melayani dan menjelaskan ke pelanggan, dan terus belajar untuk jadi talenta yang berdampak.</p>
+        <p class="hero-desc">Siswa RPL di SMK Telkom Malang — membangun aplikasi mobile dengan Flutter, kini menekuni
+          peran sebagai Quality Assurance dengan fokus pada testing dan kualitas produk, dan terus belajar untuk jadi
+          talenta yang berdampak.</p>
         <div class="hero-cta">
           <a href="https://wa.me/6281615980113" target="_blank" class="btn-primary">✉ Hubungi Saya</a>
           <a href="https://docs.google.com/document/d/1xXG7bNYra_xehLaUsu3Zv61Z6oKgRqeNzrFDTdHX9BI/edit?usp=sharing"
@@ -672,8 +674,9 @@ cat > /home/claude/index.html << 'FILEEOF'
       <div class="about-text reveal">
         <p>Saya <strong>Keyza Nadine Kusuma Ramadani</strong>, siswa Rekayasa Perangkat Lunak di SMK Telkom Malang
           yang fokus membangun aplikasi mobile dengan Flutter &amp; Dart, selalu diawali riset UI/UX di Figma.
-          Pengalaman sebagai MC, pemateri, dan sales melatih saya jadi komunikatif dan responsif — bekal yang saya
-          bawa ke peran seperti <strong>Customer Technical Support</strong>.</p>
+          Pengalaman sebagai MC, pemateri, dan sales melatih saya jadi komunikatif dan responsif bekal yang saya
+          bawa ke peran seperti <strong>Quality Assurance</strong>, memastikan aplikasi yang dibangun teruji dan
+          berkualitas sebelum sampai ke pengguna.</p>
       </div>
       <div class="about-traits reveal reveal-delay-1">
         <div class="trait"><span class="trait-icon">📱</span>
@@ -748,7 +751,7 @@ cat > /home/claude/index.html << 'FILEEOF'
   <section id="projects">
     <p class="section-label reveal">Portfolio</p>
     <h2 class="section-title reveal">Projects</h2>
-    <p class="section-sub reveal">5 project nyata yang pernah dibangun — dari mobile app, web fullstack, hingga UI/UX
+    <p class="section-sub reveal">5 project nyata yang pernah dibangun dari mobile app, web fullstack, hingga UI/UX
       design.</p>
     <div class="projects-grid">
 
@@ -1239,7 +1242,14 @@ cat > /home/claude/index.html << 'FILEEOF'
           <li>Menjual dan menawarkan tiket kegiatan kepada calon pelanggan secara langsung di lokasi</li>
           <li>Mencari serta menjalin kolaborasi dengan pihak event eksternal</li>
         </ul>
+        <div class="tl-skills">
+          <span class="tech-tag">Sales</span>
+          <span class="tech-tag">Marketing</span>
+          <span class="tech-tag">Client Communication</span>
+          <span class="tech-tag">Partnership Building</span>
+        </div>
       </div>
+
       <div class="tl-item reveal reveal-delay-1">
         <div class="tl-date">2026</div>
         <div class="tl-role">Master of Ceremony</div>
@@ -1248,7 +1258,14 @@ cat > /home/claude/index.html << 'FILEEOF'
           <li>Memandu jalannya acara dari awal hingga akhir dan menjaga interaksi dengan audiens</li>
           <li>Mengoordinasikan alur acara dengan tim penyelenggara agar setiap sesi berjalan lancar</li>
         </ul>
+        <div class="tl-skills">
+          <span class="tech-tag">Public Speaking</span>
+          <span class="tech-tag">Event Hosting</span>
+          <span class="tech-tag">Audience Engagement</span>
+          <span class="tech-tag">Team Coordination</span>
+        </div>
       </div>
+
       <div class="tl-item reveal reveal-delay-2">
         <div class="tl-date">Februari 2026</div>
         <div class="tl-role">Ketua Tim Kreatif Desain</div>
@@ -1257,7 +1274,14 @@ cat > /home/claude/index.html << 'FILEEOF'
           <li>Memimpin tim kreatif dalam pembuatan desain visual kegiatan</li>
           <li>Mengelola pembagian tugas dan koordinasi antar anggota</li>
         </ul>
+        <div class="tl-skills">
+          <span class="tech-tag">Team Leadership</span>
+          <span class="tech-tag">Visual Design</span>
+          <span class="tech-tag">Task Delegation</span>
+          <span class="tech-tag">Creative Direction</span>
+        </div>
       </div>
+
       <div class="tl-item reveal reveal-delay-3">
         <div class="tl-date">Januari – Februari 2026</div>
         <div class="tl-role">PIC Kelompok 4</div>
@@ -1267,7 +1291,14 @@ cat > /home/claude/index.html << 'FILEEOF'
           <li>Bertanggung jawab atas kelancaran dan hasil kerja kelompok</li>
           <li>Membagi tugas dan memastikan semua anggota berkontribusi</li>
         </ul>
+        <div class="tl-skills">
+          <span class="tech-tag">Team Coordination</span>
+          <span class="tech-tag">Leadership</span>
+          <span class="tech-tag">Task Delegation</span>
+          <span class="tech-tag">Accountability</span>
+        </div>
       </div>
+
       <div class="tl-item reveal reveal-delay-3">
         <div class="tl-date">2025 – 2026</div>
         <div class="tl-role">Divisi Kreatif Desain</div>
@@ -1276,7 +1307,14 @@ cat > /home/claude/index.html << 'FILEEOF'
           <li>Mendesain poster, publikasi, dan konten media sosial organisasi</li>
           <li>Mengembangkan konsep desain untuk berbagai kegiatan sub organisasi</li>
         </ul>
+        <div class="tl-skills">
+          <span class="tech-tag">Graphic Design</span>
+          <span class="tech-tag">Poster Design</span>
+          <span class="tech-tag">Social Media Content</span>
+          <span class="tech-tag">Creative Concept</span>
+        </div>
       </div>
+
       <div class="tl-item reveal reveal-delay-3">
         <div class="tl-date">2025</div>
         <div class="tl-role">Sie Acara</div>
@@ -1285,6 +1323,11 @@ cat > /home/claude/index.html << 'FILEEOF'
           <li>Menyusun konsep dan rundown acara kegiatan diklat</li>
           <li>Mengatur jalannya acara sesuai timeline</li>
         </ul>
+        <div class="tl-skills">
+          <span class="tech-tag">Event Planning</span>
+          <span class="tech-tag">Rundown Development</span>
+          <span class="tech-tag">Time Management</span>
+        </div>
       </div>
     </div>
   </section>
